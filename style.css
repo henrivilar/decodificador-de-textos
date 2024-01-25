@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+    --cor1: #000031;
+    --cor2: #2666cb;
+    --cor3: #01020e;
+    --cor4: #dedede;
+    --font1: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor4);
+    font-family: var(--font1);
+}
+
+header img {
+    width: 5%;
+    padding: 2% 2%;
+}
+
+main {
+    margin: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.digite-o-texto {
+    display: flex;
+    flex-direction: column;
+}
