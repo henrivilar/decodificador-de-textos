@@ -14,22 +14,103 @@
 }
 
 body {
+
     background-color: var(--cor4);
     font-family: var(--font1);
 }
 
+header { 
+    width: 50%;
+}
+
 header img {
-    width: 5%;
-    padding: 2% 2%;
+    width: 10%;
+    padding: 2% 5%;
 }
 
 main {
-    margin: 5%;
+    margin: 5% 15%;
     display: flex;
     justify-content: space-between;
+    gap: 40px;
 }
 
 .digite-o-texto {
     display: flex;
     flex-direction: column;
+}
+
+.caixa input {
+    padding: 0px 300px 450px 0px;
+    background-color: var(--cor4);
+    font-family: var(--font1);
+    font-size: 2rem;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+    color: var(--cor1);
+}
+
+.butoes {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    margin-top: 10px;
+}
+
+.butoes button {
+    height: 67px;
+    width: 328px;
+    border: 1px solid var(--cor1);
+    border-radius: 24px;
+}
+
+.butoes #criptografar {
+    background-color: var(--cor1);
+    color: var(--cor4);
+}
+
+.butoes #descriptografar {
+    background-color: #D8DFE8;
+    color: var(--cor1);
+}
+
+.resultado {
+    height: 744px;
+    width: 400px;
+    padding: 2%;
+    background-color: white;
+    border-radius: 24px;
+    gap: 20px;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.100);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 4%;
+    left: 60%;
+}
+
+.resultado img {
+    height: 304px;
+    width: 306px;
+}
+
+.resultado h2 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.resultado p {
+    font-size: 1rem;
+    text-align: center;
+}
+
+footer p {
+    background-color: var(--cor1);
+    color: var(--cor4);
+    padding: 1%;
+    text-align: center;
+    font-size: 1.2rem;
 }
