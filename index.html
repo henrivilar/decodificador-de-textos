@@ -15,20 +15,23 @@
         <section class="digite-o-texto">
             <div class="caixa">
                 <form action="script.js" method="get"></form>
-                <textarea name="texto" id="inputTexto" cols="40" rows="13" placeholder="Digite o texto aqui..."></textarea>
+                <textarea name="texto" id="textoRecebido" cols="40" rows="13" placeholder="Digite o texto aqui..."></textarea>
             </div>
             <div class="aviso"><img src="imgs/Frame 1.png" alt="Aviso"></div>
             <div class="butoes">
-                <button onclick="receberTexto()" id="criptografar">Criptografar</button>
-                <button onclick="receberTexto()" id="descriptografar">Descriptografar</button>
+                <button onclick="btnCriptografar()" id="criptografar">Criptografar</button>
+                <button onclick="btnDescriptografar()" id="descriptografar">Descriptografar</button>
             </div>
         </section>
 
         <aside class="resultado">
-            <div id="textoRevertido"></div>
             <img src="imgs/High quality products 1 1.png" alt="">
             <h2>Nenhuma mensagem encontrada</h2>
             <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+            <div class="mensagem-resultado">
+                <p id="textoCriptografado"></p>
+                <button class="copiar" onclick="btnCopy()">Copiar</button>
+            </div>
         </aside>
     </main>
     <footer>
